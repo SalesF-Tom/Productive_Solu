@@ -1,0 +1,8 @@
+requests
+pandas
+pyarrow
+python-dotenv
+google.cloud
+google-cloud-bigquery
+pytz
+schedule
