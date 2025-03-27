@@ -4,3 +4,5 @@ auxiliares/
 
 notas.txt
 .env
+
+cost_rates.py
