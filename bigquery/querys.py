@@ -295,15 +295,17 @@ def Merge_Data_Salaries_BQ(client, tabla_final, tabla_temp):
             A.cost = B.cost,
             A.holiday_calendar_id = B.holiday_calendar_id,
             A.person_id = B.person_id,
-            A.hourly_rate = B.hourly_rate
+            A.hourly_rate = B.hourly_rate,
+            A.started_on = B.ended_on,
+            A.ended_on =B.ended_on
 
 
         WHEN NOT MATCHED THEN
         INSERT (
-            salary_id, exchange_date, exchange_rate,hours, started_on, currency, cost, holiday_calendar_id, person_id,hourly_rate
+            salary_id, exchange_date, exchange_rate,hours, started_on, currency, cost, holiday_calendar_id, person_id,hourly_rate, ended_on
         )
         VALUES (
-            B.salary_id, B.exchange_date, B.exchange_rate,B.hours, B.started_on, B.currency, B.cost, B.holiday_calendar_id, B.person_id,B.hourly_rate
+            B.salary_id, B.exchange_date, B.exchange_rate,B.hours, B.started_on, B.currency, B.cost, B.holiday_calendar_id, B.person_id,B.hourly_rate, B.ended_on
         ) 
     """
 

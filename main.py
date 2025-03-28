@@ -39,8 +39,10 @@ def main(tipo='diario'):
         elif tipo == 'mensual': 
                 fecha = obtener_primer_dia_mes_pasado()
                 print(f"\033[36m Ejecución Mensual \033[0m")
-
-        fecha = "2024-06-01"
+        elif tipo == 'historico':
+                fecha = "2024-06-01"
+                print(f"\033[36m Ejecución Histórica \033[0m")
+                
         
         """
         print(f"\033[33m Time Report: \033[0m")
@@ -132,8 +134,8 @@ def main(tipo='diario'):
                         )
         """        
         print(f"\033[33m Salaries: \033[0m")
-        salaries = get_salaries()
-        # print(events.head())
+        salaries = get_salaries(fecha)
+        # print(salaries.head())
         if not salaries.empty:
                 Insertar_Datos_BQ(client, Esquema.schema_salaries, 'tbl_productive_salaries', salaries, 'temp', 'WRITE_TRUNCATE')
                 Merge_Data_Salaries_BQ(
@@ -172,10 +174,11 @@ def ejecutar_tareas():
         empieza = hoy
         print(f"Inicio de ejecución: {empieza}")
 
-        if hoy.day == 1:
-                main('mensual')
-        else:
-                main('semanal')
+        # if hoy.day == 1:
+        #         main('mensual')
+        # else:
+        #         main('semanal')
+        main('historico')
 
         termina = datetime.now(TIMEZONE)
         print(f"Tiempo de ejecución: {termina-empieza}.\nTerminó:   {termina.strftime('%Y-%m-%d %H:%M:%S')}")

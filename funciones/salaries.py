@@ -25,7 +25,7 @@ def get_salaries(start_date=None):
     date_filter = ""
     include_param = f'&include=holiday_calendar, person'
     if start_date:
-        date_filter += f"&filter[updated_at][gt_eq]={start_date}"  
+        date_filter += f"&filter[after]={start_date}"  
 
     while True:
         response = requests.get(f"{url_salaries}?page[number]={page_number}{date_filter}{include_param}", headers=headers)
@@ -60,7 +60,8 @@ def get_salaries(start_date=None):
                 'cost': attributes.get('cost', ''),
                 'holiday_calendar_id': holiday_calendar.get('id'),
                 'person_id': person.get('id'),
-                'hourly_rate': attributes.get('hourly_rate','')
+                'hourly_rate': attributes.get('hourly_rate',''),
+                'ended_on': attributes.get('ended_on', '')
             })
 
 
@@ -70,7 +71,7 @@ def get_salaries(start_date=None):
             break
     df = pd.DataFrame(salaries_data)
 
-    datetime_columns = ['exchange_date', 'started_on']
+    datetime_columns = ['exchange_date', 'started_on', 'ended_on']
     for col in datetime_columns:
         if col in df.columns:
             df[col] = pd.to_datetime(df[col], errors='coerce',utc=True)
