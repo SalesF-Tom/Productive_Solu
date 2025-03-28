@@ -40,8 +40,9 @@ def main(tipo='diario'):
                 fecha = obtener_primer_dia_mes_pasado()
                 print(f"\033[36m Ejecución Mensual \033[0m")
 
-        # fecha = "2024-12-01"
+        fecha = "2024-06-01"
         
+        """
         print(f"\033[33m Time Report: \033[0m")
         time_report = get_time_report(fecha)
         # print(time_report.head())
@@ -129,7 +130,7 @@ def main(tipo='diario'):
                         'data-warehouse-311917.Productive.tbl_productive_events',
                         'data-warehouse-311917.zt_productive_temp.tbl_productive_events_temp'
                         )
-        
+        """        
         print(f"\033[33m Salaries: \033[0m")
         salaries = get_salaries()
         # print(events.head())
@@ -140,6 +141,7 @@ def main(tipo='diario'):
                         'data-warehouse-311917.Productive.tbl_productive_salaries',
                         'data-warehouse-311917.zt_productive_temp.tbl_productive_salaries_temp'
                         )
+        """
         
         print(f"\033[33m Holiday Calendars: \033[0m")
         holiday_calendars = get_holiday_calendars()
@@ -163,6 +165,7 @@ def main(tipo='diario'):
                         'data-warehouse-311917.Productive.tbl_productive_holidays',
                         'data-warehouse-311917.zt_productive_temp.tbl_productive_holidays_temp'
                         )
+        """
 
 def ejecutar_tareas():
         hoy = datetime.now(TIMEZONE)

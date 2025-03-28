@@ -118,7 +118,8 @@ class Esquema(object):
         bigquery.SchemaField('currency', "STRING", mode="NULLABLE"),
         bigquery.SchemaField('cost', "INTEGER", mode="NULLABLE"),
         bigquery.SchemaField('holiday_calendar_id', "STRING", mode="NULLABLE"),
-        bigquery.SchemaField('person_id', "STRING", mode="NULLABLE")
+        bigquery.SchemaField('person_id', "STRING", mode="NULLABLE"),
+        bigquery.SchemaField('hourly_rate', "INTEGER", mode="NULLABLE")
     ]
 
 

@@ -59,7 +59,8 @@ def get_salaries(start_date=None):
                 'currency': attributes.get('currency', ''),
                 'cost': attributes.get('cost', ''),
                 'holiday_calendar_id': holiday_calendar.get('id'),
-                'person_id': person.get('id')
+                'person_id': person.get('id'),
+                'hourly_rate': attributes.get('hourly_rate','')
             })
 
 
