@@ -1,0 +1,105 @@
+2025-05-02 12:34:38,390 [INFO] >> Iniciando ejecuci髇 Productive: DIARIO - Fecha base: 2025-05-01
+2025-05-02 12:34:38,397 [INFO] Procesando entidad: people
+2025-05-02 12:34:38,400 [INFO] Procesando entidad: projects
+2025-05-02 12:34:38,403 [INFO] Procesando entidad: services
+2025-05-02 12:34:38,405 [INFO] Procesando entidad: time_entries
+2025-05-02 12:34:40,603 [WARNING] services: DataFrame vac韔. Se omite carga.
+2025-05-02 12:34:40,604 [INFO] Procesando entidad: time_reports
+2025-05-02 12:34:52,368 [INFO] Procesando entidad: deals
+2025-05-02 12:34:52,930 [INFO] Procesando entidad: bookings
+2025-05-02 12:34:53,190 [WARNING] deals: DataFrame vac韔. Se omite carga.
+2025-05-02 12:34:53,190 [INFO] Procesando entidad: events
+2025-05-02 12:35:04,047 [INFO] Procesando entidad: salaries
+2025-05-02 12:35:04,060 [INFO] Procesando entidad: holiday_calendars
+2025-05-02 12:35:11,402 [INFO] Procesando entidad: holidays
+2025-05-02 12:37:53,840 [INFO] >> Iniciando ejecuci髇 Productive: DIARIO - Fecha base: 2025-05-01
+2025-05-02 12:37:53,845 [INFO] Procesando entidad: people
+2025-05-02 12:37:53,847 [INFO] Procesando entidad: projects
+2025-05-02 12:37:53,849 [INFO] Procesando entidad: services
+2025-05-02 12:37:53,851 [INFO] Procesando entidad: time_entries
+2025-05-02 12:37:54,840 [WARNING] services: DataFrame vac韔. Se omite carga.
+2025-05-02 12:37:54,840 [INFO] Procesando entidad: time_reports
+2025-05-02 12:38:06,248 [INFO] Procesando entidad: deals
+2025-05-02 12:38:06,291 [INFO] Procesando entidad: bookings
+2025-05-02 12:38:07,076 [WARNING] deals: DataFrame vac韔. Se omite carga.
+2025-05-02 12:38:07,078 [INFO] Procesando entidad: events
+2025-05-02 12:38:07,245 [INFO] Procesando entidad: salaries
+2025-05-02 12:38:17,998 [INFO] Procesando entidad: holiday_calendars
+2025-05-02 12:38:18,512 [INFO] Procesando entidad: holidays
+2025-05-02 12:39:47,307 [INFO] Ejecuci贸n diaria
+2025-05-02 12:39:47,307 [INFO] Iniciando ejecuci贸n Productive: DIARIO - Fecha base: 2025-05-01
+2025-05-02 12:39:47,310 [INFO] Procesando entidad: people
+2025-05-02 12:39:47,312 [INFO] Procesando entidad: projects
+2025-05-02 12:39:47,313 [INFO] Procesando entidad: services
+2025-05-02 12:39:47,314 [INFO] Procesando entidad: time_entries
+2025-05-02 12:39:48,414 [WARNING] services: DataFrame vac铆o. Se omite carga.
+2025-05-02 12:39:48,448 [INFO] Procesando entidad: time_reports
+2025-05-02 12:39:59,905 [INFO] Procesando entidad: deals
+2025-05-02 12:40:00,656 [INFO] Procesando entidad: bookings
+2025-05-02 12:40:00,665 [WARNING] deals: DataFrame vac铆o. Se omite carga.
+2025-05-02 12:40:00,668 [INFO] Procesando entidad: events
+2025-05-02 12:40:10,842 [INFO] Procesando entidad: salaries
+2025-05-02 12:40:12,243 [INFO] Procesando entidad: holiday_calendars
+2025-05-02 12:40:16,373 [INFO] Procesando entidad: holidays
+2025-05-02 12:40:36,661 [INFO] Pipeline finalizado en 49.35 segundos.
+2025-05-02 12:40:36,662 [INFO] 
+Resumen de ejecuci贸n Productive (DIARIO)
+Fecha de corte: 2025-05-01
+Duraci贸n: 49.35 segundos
+- services: VAC脥O
+- time_reports: 57 filas
+- people: 85 filas
+- deals: VAC脥O
+- events: 15 filas
+- bookings: 28 filas
+- time_entries: 317 filas
+- salaries: 57 filas
+- holiday_calendars: 13 filas
+- projects: 51 filas
+- holidays: 312 filas
+
+2025-05-02 12:42:44,669 [WARNING] Scheduler detenido manualmente.
+2025-05-02 12:42:56,283 [INFO] Ejecuci贸n diaria
+2025-05-02 12:42:56,283 [INFO] Iniciando ejecuci贸n Productive: DIARIO - Fecha base: 2025-05-01
+2025-05-02 12:42:56,286 [INFO] Procesando entidad: people
+2025-05-02 12:42:56,288 [INFO] Procesando entidad: projects
+2025-05-02 12:42:56,290 [INFO] Procesando entidad: services
+2025-05-02 12:42:56,291 [INFO] Procesando entidad: time_entries
+2025-05-02 12:43:09,017 [INFO] Procesando entidad: time_reports
+2025-05-02 12:43:09,532 [INFO] Procesando entidad: deals
+2025-05-02 12:43:22,213 [INFO] Procesando entidad: bookings
+2025-05-02 12:43:25,880 [INFO] Procesando entidad: events
+2025-05-02 12:43:34,825 [INFO] Procesando entidad: salaries
+2025-05-02 12:43:35,492 [INFO] Procesando entidad: holiday_calendars
+2025-05-02 12:43:35,815 [INFO] Procesando entidad: holidays
+2025-05-02 12:43:54,284 [INFO] Pipeline finalizado en 58.00 segundos.
+2025-05-02 12:43:54,285 [INFO] 
+Resumen de ejecuci贸n Productive (DIARIO)
+Fecha de corte: 2025-05-01
+Duraci贸n: 58.00 segundos
+- projects: 51 filas
+- people: 85 filas
+- time_reports: 57 filas
+- deals: 144 filas
+- bookings: 28 filas
+- services: 688 filas
+- events: 15 filas
+- time_entries: 317 filas
+- salaries: 57 filas
+- holiday_calendars: 13 filas
+- holidays: 312 filas
+
+2025-05-02 12:44:01,082 [WARNING] Scheduler detenido manualmente.
+2025-05-02 12:45:14,024 [INFO] Ejecuci贸n hist贸rica
+2025-05-02 12:45:14,024 [INFO] Iniciando ejecuci贸n Productive: HISTORICO - Fecha base: 2024-06-01
+2025-05-02 12:45:14,028 [INFO] Procesando entidad: people
+2025-05-02 12:45:14,029 [INFO] Procesando entidad: projects
+2025-05-02 12:45:14,030 [INFO] Procesando entidad: services
+2025-05-02 12:45:14,032 [INFO] Procesando entidad: time_entries
+2025-05-02 12:45:27,151 [INFO] Procesando entidad: time_reports
+2025-05-02 12:45:27,466 [INFO] Procesando entidad: deals
+2025-05-02 12:45:48,025 [INFO] Procesando entidad: bookings
+2025-05-02 12:45:54,193 [INFO] Procesando entidad: events
+2025-05-02 12:46:05,351 [INFO] Procesando entidad: salaries
+2025-05-02 12:46:52,370 [INFO] Procesando entidad: holiday_calendars
+2025-05-02 12:47:03,645 [INFO] Procesando entidad: holidays
