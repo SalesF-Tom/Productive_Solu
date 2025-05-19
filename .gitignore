@@ -1,6 +1,7 @@
 credenciales/
 myenv/
 auxiliares/
+.vscode/
 
 notas.txt
 .env
