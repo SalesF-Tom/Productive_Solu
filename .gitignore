@@ -1,7 +1,11 @@
-credenciales/
+
 myenv/
 auxiliares/
 .vscode/
 
 notas.txt
 .env
+
+
+credencialesbq.json
+data-warehouse-311917-73a0792225c7.json
